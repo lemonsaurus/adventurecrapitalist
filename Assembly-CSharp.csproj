@@ -65,8 +65,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Code\GameManager.cs" />
-    <Compile Include="Assets\Code\Store.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Store.cs" />
+    <Compile Include="Assets\Scripts\StoreUI.cs" />
+    <Compile Include="Assets\Scripts\UIManager.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>E:/git/polyhedral-games/SadVenture Crapitalist/SadVenture Crapitalist/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

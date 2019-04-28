@@ -6,9 +6,11 @@
     <e p="E:\git\polyhedral-games\SadVenture Crapitalist\SadVenture Crapitalist" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="Code" t="Include">
+        <e p="Scripts" t="Include">
           <e p="GameManager.cs" t="Include" />
           <e p="Store.cs" t="Include" />
+          <e p="StoreUI.cs" t="Include" />
+          <e p="UIManager.cs" t="Include" />
         </e>
       </e>
       <e p="Library" t="ExcludeRecursive" />
