@@ -8,6 +8,8 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="GameManager.cs" t="Include" />
+          <e p="Manager.cs" t="Include" />
+          <e p="ManagerUI.cs" t="Include" />
           <e p="Store.cs" t="Include" />
           <e p="StoreUI.cs" t="Include" />
           <e p="UIManager.cs" t="Include" />

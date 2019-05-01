@@ -50,7 +50,7 @@ public class StoreUI : MonoBehaviour
             
             if (_currentTimer >= _store.timerTarget)
             {
-                if (!_store.managerUnlocked)
+                if (!_store.ManagerUnlocked)
                 {
                     _timerRunning = false;    
                 }

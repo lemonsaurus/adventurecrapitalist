@@ -2,7 +2,7 @@
 
 public class Store : MonoBehaviour
 {
-    public bool managerUnlocked;
+    
     public float timerTarget;
     public float baseStoreCost;
     public float baseStoreProfit;
@@ -12,11 +12,16 @@ public class Store : MonoBehaviour
     
     public int StoreCount { get; private set; }
     public float NextStoreCost { get; private set; }
+    public bool ManagerUnlocked { get; private set; }
+
+    private StoreUI _storeUI;
 
     private void Awake()
     {
         StoreCount = 0;
         NextStoreCost = baseStoreCost;
+
+        _storeUI = transform.GetComponent<StoreUI>();
     }
 
     public void BuyStore()
@@ -33,5 +38,12 @@ public class Store : MonoBehaviour
         
         // Trigger the event only after updating everything.
         GameManager.Instance.DeductFunds(deductAmount);
+    }
+
+    public void UnlockManager()
+    {
+        ManagerUnlocked = true;
+        _storeUI.UseStoreOnClick();
+        
     }
 }
