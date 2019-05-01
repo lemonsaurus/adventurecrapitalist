@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -7,6 +8,8 @@ public class GameManager : MonoBehaviour
     public static event UpdateBalance OnUpdateBalance;
     
     public static GameManager Instance;
+    public Store[] allStores;
+    public Image[] imagesToPurplify;
     private float _cashMoney = 2.0f;
 
     void Awake()
@@ -42,5 +45,26 @@ public class GameManager : MonoBehaviour
     {
         _cashMoney -= amount;
         OnUpdateBalance?.Invoke();
+    }
+
+    public void UnlockAllManagersOnClick(Button buttonClicked)
+    {
+        foreach (var store in allStores)
+            store.UnlockManager();
+
+        buttonClicked.interactable = false;
+
+    }
+
+    public void GetRichOnClick(Button buttonClicked)
+    {
+        AddFunds(10000);
+        buttonClicked.interactable = false;
+    }
+
+    public void MakeStuffPurpleOnClick()
+    {
+        foreach (var image in imagesToPurplify)
+            image.color = new Color(128, 0, 128);
     }
 }

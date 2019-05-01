@@ -536,7 +536,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 258751186}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2114572400}
+        m_MethodName: UnlockAllManagersOnClick
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 258751185}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &258751186
@@ -657,7 +668,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 417619967}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2114572400}
+        m_MethodName: GetRichOnClick
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 417619966}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Button, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &417619967
@@ -881,7 +903,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 506162676}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2114572400}
+        m_MethodName: MakeStuffPurpleOnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &506162676
@@ -1234,7 +1267,7 @@ PrefabInstance:
     - target: {fileID: 4791514729154692514, guid: d6f9f0dc417608c4fa91fcac9bb83fc9,
         type: 3}
       propertyPath: m_Name
-      value: StorePanel (2)
+      value: UnicornPoopCookies
       objectReference: {fileID: 0}
     - target: {fileID: 4791514729154692515, guid: d6f9f0dc417608c4fa91fcac9bb83fc9,
         type: 3}
@@ -1341,11 +1374,42 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4791514729154692524, guid: d6f9f0dc417608c4fa91fcac9bb83fc9,
+        type: 3}
+      propertyPath: timerTarget
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4791514729154692524, guid: d6f9f0dc417608c4fa91fcac9bb83fc9,
+        type: 3}
+      propertyPath: baseStoreCost
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 4791514729154692524, guid: d6f9f0dc417608c4fa91fcac9bb83fc9,
+        type: 3}
+      propertyPath: baseStoreProfit
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 4791514729154692524, guid: d6f9f0dc417608c4fa91fcac9bb83fc9,
+        type: 3}
+      propertyPath: storeSpeedupCount
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 4791514727545256423, guid: d6f9f0dc417608c4fa91fcac9bb83fc9,
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4791514727382101541, guid: d6f9f0dc417608c4fa91fcac9bb83fc9,
+        type: 3}
+      propertyPath: m_Text
+      value: Unicorn Poop Cookies
+      objectReference: {fileID: 0}
+    - target: {fileID: 4791514728796319491, guid: d6f9f0dc417608c4fa91fcac9bb83fc9,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 91d39a5fa901f344e8f721eaacc3bb39,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6f9f0dc417608c4fa91fcac9bb83fc9, type: 3}
 --- !u!1 &793868543
@@ -1924,6 +1988,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1283180838 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4791514728796319491, guid: d6f9f0dc417608c4fa91fcac9bb83fc9,
+    type: 3}
+  m_PrefabInstance: {fileID: 736974254}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1300883948
 GameObject:
   m_ObjectHideFlags: 0
@@ -2077,6 +2153,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1303686080}
   m_CullTransparentMesh: 0
+--- !u!114 &1313384204 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4791514728796319491, guid: d6f9f0dc417608c4fa91fcac9bb83fc9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1337802478}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1337802478
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2087,7 +2175,7 @@ PrefabInstance:
     - target: {fileID: 4791514729154692514, guid: d6f9f0dc417608c4fa91fcac9bb83fc9,
         type: 3}
       propertyPath: m_Name
-      value: StorePanel (1)
+      value: SecondHandHoney
       objectReference: {fileID: 0}
     - target: {fileID: 4791514729154692515, guid: d6f9f0dc417608c4fa91fcac9bb83fc9,
         type: 3}
@@ -2194,11 +2282,42 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4791514729154692524, guid: d6f9f0dc417608c4fa91fcac9bb83fc9,
+        type: 3}
+      propertyPath: baseStoreCost
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 4791514729154692524, guid: d6f9f0dc417608c4fa91fcac9bb83fc9,
+        type: 3}
+      propertyPath: baseStoreProfit
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4791514729154692524, guid: d6f9f0dc417608c4fa91fcac9bb83fc9,
+        type: 3}
+      propertyPath: storeSpeedupCount
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4791514729154692524, guid: d6f9f0dc417608c4fa91fcac9bb83fc9,
+        type: 3}
+      propertyPath: timerTarget
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4791514727545256423, guid: d6f9f0dc417608c4fa91fcac9bb83fc9,
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4791514727382101541, guid: d6f9f0dc417608c4fa91fcac9bb83fc9,
+        type: 3}
+      propertyPath: m_Text
+      value: Second Hand Honey
+      objectReference: {fileID: 0}
+    - target: {fileID: 4791514728796319491, guid: d6f9f0dc417608c4fa91fcac9bb83fc9,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: aefd8d34bd440f642a04ff199a4aacef,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6f9f0dc417608c4fa91fcac9bb83fc9, type: 3}
 --- !u!1001 &1357913833
@@ -2482,7 +2601,7 @@ PrefabInstance:
     - target: {fileID: 4791514729154692514, guid: d6f9f0dc417608c4fa91fcac9bb83fc9,
         type: 3}
       propertyPath: m_Name
-      value: StorePanel
+      value: FancyToiletWine
       objectReference: {fileID: 0}
     - target: {fileID: 4791514729154692515, guid: d6f9f0dc417608c4fa91fcac9bb83fc9,
         type: 3}
@@ -2589,11 +2708,42 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4791514729154692524, guid: d6f9f0dc417608c4fa91fcac9bb83fc9,
+        type: 3}
+      propertyPath: baseStoreProfit
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4791514729154692524, guid: d6f9f0dc417608c4fa91fcac9bb83fc9,
+        type: 3}
+      propertyPath: baseStoreCost
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4791514729154692524, guid: d6f9f0dc417608c4fa91fcac9bb83fc9,
+        type: 3}
+      propertyPath: storeSpeedupCount
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 4791514729154692524, guid: d6f9f0dc417608c4fa91fcac9bb83fc9,
+        type: 3}
+      propertyPath: timerTarget
+      value: 2.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4791514727545256423, guid: d6f9f0dc417608c4fa91fcac9bb83fc9,
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4791514727382101541, guid: d6f9f0dc417608c4fa91fcac9bb83fc9,
+        type: 3}
+      propertyPath: m_Text
+      value: Fancy Toilet Wine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4791514728796319491, guid: d6f9f0dc417608c4fa91fcac9bb83fc9,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d8a0ba598a7bb264db22379a96e45506,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6f9f0dc417608c4fa91fcac9bb83fc9, type: 3}
 --- !u!224 &1422045472 stripped
@@ -2629,7 +2779,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1571002860
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2911,6 +3061,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 049d5280898637c4a9cc976712fa49fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  allStores:
+  - {fileID: 1084333020944763736}
+  - {fileID: 223862956}
+  - {fileID: 138545931}
+  - {fileID: 1422045475}
+  imagesToPurplify:
+  - {fileID: 246652052}
+  - {fileID: 1303686082}
+  - {fileID: 5492739840471091316}
+  - {fileID: 708021727}
+  - {fileID: 1084333020699566583}
+  - {fileID: 2141432754}
+  - {fileID: 1313384204}
+  - {fileID: 1283180838}
 --- !u!4 &2114572401
 Transform:
   m_ObjectHideFlags: 0
@@ -2941,6 +3105,18 @@ MonoBehaviour:
   managerWindow: {fileID: 3099023737719315537}
   configWindow: {fileID: 1571002859}
   storeGrid: {fileID: 474857109}
+--- !u!114 &2141432754 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4791514728796319491, guid: d6f9f0dc417608c4fa91fcac9bb83fc9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1414424598}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &607202447254569952
 GameObject:
   m_ObjectHideFlags: 0
@@ -2959,6 +3135,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1084333020699566583 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4791514728796319491, guid: d6f9f0dc417608c4fa91fcac9bb83fc9,
+    type: 3}
+  m_PrefabInstance: {fileID: 5580719019103801076}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &1084333020944763735 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4791514729154692515, guid: d6f9f0dc417608c4fa91fcac9bb83fc9,
@@ -3281,6 +3469,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4791514729154692524, guid: d6f9f0dc417608c4fa91fcac9bb83fc9,
+        type: 3}
+      propertyPath: baseStoreProfit
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4791514727545256423, guid: d6f9f0dc417608c4fa91fcac9bb83fc9,
         type: 3}
